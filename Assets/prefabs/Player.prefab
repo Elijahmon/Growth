@@ -11,7 +11,7 @@ GameObject:
   - 223: {fileID: 22302170}
   - 114: {fileID: 11414836}
   - 114: {fileID: 11474210}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 467200}
   - 114: {fileID: 11468714}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   - 33: {fileID: 3372092}
   - 23: {fileID: 2340368}
   - 114: {fileID: 11422072}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCylinder5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60,7 +60,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 423690}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: VinePlayerModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77,7 +77,7 @@ GameObject:
   - 224: {fileID: 22455404}
   - 222: {fileID: 22270734}
   - 114: {fileID: 11497244}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - 4: {fileID: 429526}
   - 33: {fileID: 3395000}
   - 23: {fileID: 2355518}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,9 +111,9 @@ GameObject:
   - 4: {fileID: 475226}
   - 114: {fileID: 11424010}
   - 54: {fileID: 5459394}
-  - 65: {fileID: 6505212}
   - 114: {fileID: 11453864}
-  m_Layer: 0
+  - 65: {fileID: 6544030}
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,7 +130,7 @@ GameObject:
   - 4: {fileID: 469124}
   - 20: {fileID: 2097696}
   - 114: {fileID: 11489540}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -326,7 +326,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!65 &6505212
+--- !u!65 &6544030
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -336,8 +336,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: .241320968, z: 2.00063515}
+  m_Center: {x: 0, y: .0225551724, z: 3.57627869e-07}
 --- !u!114 &11414836
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -370,8 +370,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3173a5c83a2d92a41a8426ef4db71255, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  growthoffset: 1
-  growthPrefab: {fileID: 0}
+  growthoffset: 2
+  growthPrefab: {fileID: 143954, guid: cea6f80491682ca49b82d9ffa3694fbf, type: 2}
 --- !u!114 &11424010
 MonoBehaviour:
   m_ObjectHideFlags: 1

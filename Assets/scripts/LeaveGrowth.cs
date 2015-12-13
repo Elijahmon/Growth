@@ -16,21 +16,24 @@ public class LeaveGrowth : MonoBehaviour
 	void Start ()
     {
         lastGrowthPosition = transform.position;
-	}
+        //Instantiate(growthPrefab, transform.position, transform.rotation);
+    }
 	
 	// Update is called once per frame
 	void Update ()
     {
-	    if(Vector3.Distance(lastGrowthPosition, transform.position) > growthoffset)
-        {
-            PlantGrowth();
-        }
+            if (Vector3.Distance(lastGrowthPosition, transform.position) > growthoffset)
+            {
+                // Debug.Log(Vector3.Distance(lastGrowthPosition, transform.position));
+                PlantGrowth();
+            }
 	}
 
     void PlantGrowth()
     {
         GameObject g = (GameObject)Instantiate(growthPrefab, transform.position, transform.rotation);
         growthObjects.Add(g);
+        g.transform.SetParent(GameObject.Find("Vines").transform);
         lastGrowthPosition = g.transform.position;
     }
 }

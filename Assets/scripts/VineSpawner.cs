@@ -8,7 +8,11 @@ public class VineSpawner : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		GameObject g = (GameObject)Instantiate(growingVines, transform.position, Quaternion.identity);
+        for (int i = 0; i < 4; i++)
+        {
+            GameObject g = (GameObject)Instantiate(growingVines, transform.position, Quaternion.identity);
+            g.transform.position = new Vector3(Random.Range(transform.position.x - 1, transform.position.x + 1), transform.position.y, Random.Range(transform.position.z - 1, transform.position.z + 1));
+        }
 
 	}
 	
