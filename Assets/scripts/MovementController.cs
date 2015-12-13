@@ -19,6 +19,7 @@ public class MovementController : MonoBehaviour
     int maxStrafeSpeed;
     
     Rigidbody playerRigidbody;
+    public bool climbing = false;
 	// Use this for initialization
 	void Start ()
     {
@@ -43,10 +44,22 @@ public class MovementController : MonoBehaviour
     void MoveForward(float v)
     {
         Vector3 forwardDirection = targetTransform.TransformDirection(Vector3.forward);
-        forwardDirection.y = 0;
-        if (!(playerRigidbody.velocity.magnitude > maxForwardSpeed))
+        if(!climbing)
         {
-            playerRigidbody.AddForce(forwardDirection * (v * forwardSpeed));
+            playerRigidbody.useGravity = true;
+            forwardDirection.y = 0;
+            if (!(playerRigidbody.velocity.magnitude > maxForwardSpeed))
+            {
+                playerRigidbody.AddForce(forwardDirection * (v * forwardSpeed));
+            }
+        }
+        else
+        {
+            if (!(playerRigidbody.velocity.magnitude > maxForwardSpeed))
+            {
+                playerRigidbody.useGravity = false;
+                playerRigidbody.AddForce(forwardDirection * (v * forwardSpeed));
+            }
         }
         graphicsSync.SetMovementDirection(transform.InverseTransformDirection(playerRigidbody.velocity));
     }
