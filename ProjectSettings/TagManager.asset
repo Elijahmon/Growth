@@ -5,7 +5,6 @@ TagManager:
   serializedVersion: 2
   tags:
   - WaterPool
-  - Wall
   layers:
   - Default
   - TransparentFX
