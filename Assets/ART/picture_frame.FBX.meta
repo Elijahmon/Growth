@@ -1,20 +1,15 @@
 fileFormatVersion: 2
-guid: 2cae01a8410dd9a4e89e855cc079380b
-timeCreated: 1449984020
+guid: aaea784c7ef08f541bc7223f35e50235
+timeCreated: 1449988410
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
-    100000: ambientLight1
-    100002: //RootNode
-    100004: pCube1
-    400000: ambientLight1
-    400002: //RootNode
-    400004: pCube1
-    2300000: pCube1
-    3300000: pCube1
-    4300000: pCube1
-    9500000: //RootNode
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: pictureFrame
   materials:
     importMaterials: 1
     materialName: 0
@@ -73,7 +68,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

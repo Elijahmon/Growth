@@ -1,10 +1,15 @@
 fileFormatVersion: 2
-guid: b19b1d5cc887a2a4e8fa33ac730752e6
-timeCreated: 1449984021
+guid: 35bb8250035601d49818eadd2cb16286
+timeCreated: 1449988409
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: BarrelOpen
   materials:
     importMaterials: 1
     materialName: 0
@@ -63,7 +68,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
