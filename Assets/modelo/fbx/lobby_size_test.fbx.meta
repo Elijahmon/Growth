@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: f1e018a47ce8ed944a7260db23192cd0
-timeCreated: 1449984646
+guid: 2cae01a8410dd9a4e89e855cc079380b
+timeCreated: 1449984020
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
-    100000: curve3
-    100002: pCylinder6
-    100004: //RootNode
-    400000: curve3
-    400002: pCylinder6
-    400004: //RootNode
-    2300000: pCylinder6
-    3300000: pCylinder6
-    4300000: pCylinder6
+    100000: ambientLight1
+    100002: //RootNode
+    100004: pCube1
+    400000: ambientLight1
+    400002: //RootNode
+    400004: pCube1
+    2300000: pCube1
+    3300000: pCube1
+    4300000: pCube1
     9500000: //RootNode
   materials:
     importMaterials: 1
