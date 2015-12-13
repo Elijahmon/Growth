@@ -8,7 +8,8 @@ public class faceMovementDirection : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate ()
     {
-        transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(movementDirection), .5f);
+		if(movementDirection != Vector3.zero)
+        	transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(movementDirection), .5f);
 	}
     public void SetMovementDirection(Vector3 vel)
     {

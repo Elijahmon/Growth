@@ -8,7 +8,8 @@ public class plantScript : MonoBehaviour
     public enum STATE { IDLE, MOVING, CLIMBING}
     STATE currentState = STATE.IDLE;
 
-
+	[SerializeField]
+	MovementController movementController;
     [SerializeField]
     Text uiWaterText;
 
@@ -44,7 +45,14 @@ public class plantScript : MonoBehaviour
     {
         if(plantRigidbody.velocity != Vector3.zero)
         {
-            return STATE.MOVING;
+			if(movementController.climbing)
+			{
+				return STATE.CLIMBING;
+			}
+			else
+			{
+            	return STATE.MOVING;
+			}
         }
         return STATE.IDLE;
     }
@@ -58,5 +66,18 @@ public class plantScript : MonoBehaviour
                 currentWater+= .5f;
             }
         }
+		if(coll.tag == "Wall")
+		{
+			movementController.climbing = true;
+			currentState = STATE.CLIMBING;
+		}
     }
+	void OnTriggerExit(Collider coll)
+	{
+		if(coll.tag == "Wall")
+		{
+			movementController.climbing = false;
+			currentState = STATE.MOVING;
+		}
+	}
 }

@@ -17,8 +17,14 @@ public class MovementController : MonoBehaviour
     int strafeSpeed;
     [SerializeField]
     int maxStrafeSpeed;
+	[SerializeField]
+	int climbSpeed;
+	[SerializeField]
+	int maxClimbSpeed;
     
     Rigidbody playerRigidbody;
+
+	public bool climbing;
 	// Use this for initialization
 	void Start ()
     {
@@ -38,16 +44,35 @@ public class MovementController : MonoBehaviour
         {
             Strafe(Input.GetAxis("Horizontal"));
         }
+		if(Input.GetButtonDown("Jump"))
+		{
+			playerRigidbody.useGravity = true;
+			climbing = false;
+		}
 	}
 
     void MoveForward(float v)
     {
-        Vector3 forwardDirection = targetTransform.TransformDirection(Vector3.forward);
-        forwardDirection.y = 0;
-        if (!(playerRigidbody.velocity.magnitude > maxForwardSpeed))
-        {
-            playerRigidbody.AddForce(forwardDirection * (v * forwardSpeed));
-        }
+		Vector3 forwardDirection = targetTransform.TransformDirection(Vector3.forward);
+
+		if(!climbing)
+		{
+			playerRigidbody.useGravity = true;
+			forwardDirection.y = 0;
+        	if (!(playerRigidbody.velocity.magnitude > maxForwardSpeed))
+        	{
+           		playerRigidbody.AddForce(forwardDirection * (v * forwardSpeed));
+        	}
+		}
+		else
+		{
+			forwardDirection.x = 0;
+			if(!(playerRigidbody.velocity.magnitude > maxClimbSpeed))
+			{
+				playerRigidbody.useGravity = false;
+				playerRigidbody.AddForce(forwardDirection * (v * climbSpeed));
+			}
+		}
         graphicsSync.SetMovementDirection(transform.InverseTransformDirection(playerRigidbody.velocity));
     }
     void Strafe(float h)
