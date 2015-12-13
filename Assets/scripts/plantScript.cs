@@ -35,10 +35,10 @@ public class plantScript : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        
-
-
-
+		if(currentWater <= 0)
+		{
+			currentWater = 0;
+		}
         uiWaterText.text = "Water Left: " + currentWater;
 	}
     STATE UpdateState()
