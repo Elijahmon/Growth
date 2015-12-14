@@ -99,8 +99,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 21.3546257, y: .830811024, z: 32.0294342}
-  m_Center: {x: -.0233955383, y: .84253788, z: -.021697998}
+  m_Size: {x: 21.3546257, y: 9.04030037, z: 32.0294342}
+  m_Center: {x: -.0233955383, y: -3.26220703, z: -.021697998}
 --- !u!1001 &73903788
 Prefab:
   m_ObjectHideFlags: 0
@@ -472,10 +472,22 @@ MonoBehaviour:
   sunThreshold: {r: .870000005, g: .74000001, b: .649999976, a: 1}
   sunShaftBlurRadius: 2.5
   sunShaftIntensity: 1.14999998
-  maxRadius: .75
+  maxRadius: .0360000134
   useDepthTexture: 1
   sunShaftsShader: {fileID: 4800000, guid: d3b1c8c1036784176946f5cfbfb7fe4c, type: 3}
   simpleClearShader: {fileID: 4800000, guid: f688f89ed5eb847c5b19c934a0f1e772, type: 3}
+--- !u!65 &555865296
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 555865291}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &752271883
 Prefab:
   m_ObjectHideFlags: 0
@@ -962,6 +974,18 @@ Prefab:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 475226, guid: 56a3ebbd26414e4438d366cf964cfd20, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 469124, guid: 56a3ebbd26414e4438d366cf964cfd20, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 469124, guid: 56a3ebbd26414e4438d366cf964cfd20, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 469124, guid: 56a3ebbd26414e4438d366cf964cfd20, type: 2}
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
