@@ -5,7 +5,7 @@ public class MovementController : MonoBehaviour
 {
 
     [SerializeField]
-    Transform targetTransform;
+    public Transform targetTransform;
     [SerializeField]
     faceMovementDirection graphicsSync;
 

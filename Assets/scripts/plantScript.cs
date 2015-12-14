@@ -12,6 +12,8 @@ public class plantScript : MonoBehaviour
     MovementController movementController;
     [SerializeField]
     Text uiWaterText;
+    [SerializeField]
+    Camera endGameCamera;
 
     [SerializeField]
     int maxWater;
@@ -38,8 +40,12 @@ public class plantScript : MonoBehaviour
 		if(currentWater <= 0)
 		{
 			currentWater = 0;
-            this.GetComponent<MovementController>().enabled = false;
+            movementController.targetTransform.GetComponent<Camera>().enabled = false;
+            endGameCamera.enabled = true;
+            movementController.enabled = false;
             currentState = STATE.GAME_OVER;
+           
+
 		}
         uiWaterText.text = "Water Left: " + currentWater;
 	}
