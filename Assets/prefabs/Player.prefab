@@ -18,22 +18,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &112624
-GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 495460}
-  - 114: {fileID: 11453688}
-  m_Layer: 8
-  m_Name: vineSpawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &122366
 GameObject:
   m_ObjectHideFlags: 0
@@ -146,7 +130,6 @@ GameObject:
   - 4: {fileID: 469124}
   - 20: {fileID: 2097696}
   - 114: {fileID: 11489540}
-  - 114: {fileID: 11401432}
   m_Layer: 8
   m_Name: Camera
   m_TagString: Untagged
@@ -176,8 +159,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: -.707106829, w: .707106829}
   m_LocalPosition: {x: -.00278823846, y: .0179827213, z: .442096919}
   m_LocalScale: {x: 3.19309187, y: 3.19309187, z: 3.19309211}
-  m_Children:
-  - {fileID: 495460}
+  m_Children: []
   m_Father: {fileID: 423690}
   m_RootOrder: 0
 --- !u!4 &429526
@@ -232,18 +214,6 @@ Transform:
   - {fileID: 469124}
   - {fileID: 22487708}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
---- !u!4 &495460
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 112624}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0189999994, y: .314999998, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 427498}
   m_RootOrder: 0
 --- !u!20 &2097696
 Camera:
@@ -368,29 +338,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: .241320968, z: 2.00063515}
   m_Center: {x: 0, y: .0225551724, z: 3.57627869e-07}
---- !u!114 &11401432
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 184242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60e318a6043c1cb4a8ce1c8805bab930, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  resolution: 1
-  screenBlendMode: 0
-  sunTransform: {fileID: 0}
-  radialBlurIterations: 2
-  sunColor: {r: 1, g: 1, b: 1, a: 1}
-  sunThreshold: {r: .870000005, g: .74000001, b: .649999976, a: 1}
-  sunShaftBlurRadius: 2.5
-  sunShaftIntensity: 1.14999998
-  maxRadius: .75
-  useDepthTexture: 1
-  sunShaftsShader: {fileID: 4800000, guid: d3b1c8c1036784176946f5cfbfb7fe4c, type: 3}
-  simpleClearShader: {fileID: 4800000, guid: f688f89ed5eb847c5b19c934a0f1e772, type: 3}
 --- !u!114 &11414836
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -418,12 +365,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 123168}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3173a5c83a2d92a41a8426ef4db71255, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  growthoffset: 1.5
+  growthoffset: 2
   growthPrefab: {fileID: 143954, guid: cea6f80491682ca49b82d9ffa3694fbf, type: 2}
 --- !u!114 &11424010
 MonoBehaviour:
@@ -443,19 +390,6 @@ MonoBehaviour:
   strafeSpeed: 15
   maxStrafeSpeed: 20
   climbing: 0
---- !u!114 &11453688
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 112624}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3173a5c83a2d92a41a8426ef4db71255, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  growthoffset: 1.79999995
-  growthPrefab: {fileID: 143954, guid: cea6f80491682ca49b82d9ffa3694fbf, type: 2}
 --- !u!114 &11453864
 MonoBehaviour:
   m_ObjectHideFlags: 1

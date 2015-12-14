@@ -34,10 +34,6 @@ public class LeaveGrowth : MonoBehaviour
         GameObject g = (GameObject)Instantiate(growthPrefab, transform.position, transform.rotation);
         growthObjects.Add(g);
         g.transform.SetParent(GameObject.Find("Vines").transform);
-        if(growthObjects.Count > 0)
-        {
-            
-        }
         lastGrowthPosition = g.transform.position;
     }
 }
