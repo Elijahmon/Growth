@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class plantScript : MonoBehaviour
 {
     
-    public enum STATE { IDLE, MOVING, CLIMBING}
+    public enum STATE { IDLE, MOVING, CLIMBING, GAME_OVER}
     STATE currentState = STATE.IDLE;
 
     [SerializeField]
@@ -38,6 +38,8 @@ public class plantScript : MonoBehaviour
 		if(currentWater <= 0)
 		{
 			currentWater = 0;
+            this.GetComponent<MovementController>().enabled = false;
+            currentState = STATE.GAME_OVER;
 		}
         uiWaterText.text = "Water Left: " + currentWater;
 	}
