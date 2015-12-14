@@ -158,6 +158,19 @@ ModelImporter:
     100300: transform7
     100302: transform8
     100304: transform9
+    100306: polySurface77
+    100308: polySurface78
+    100310: polySurface79
+    100312: polySurface80
+    100314: polySurface81
+    100316: polySurface82
+    100318: polySurface83
+    100320: polySurface84
+    100322: polySurface85
+    100324: polySurface86
+    100326: polySurface87
+    100328: polySurface88
+    100330: transform66
     400000: ambientLight1
     400002: areaLight1
     400004: //RootNode
@@ -311,6 +324,19 @@ ModelImporter:
     400300: transform7
     400302: transform8
     400304: transform9
+    400306: polySurface77
+    400308: polySurface78
+    400310: polySurface79
+    400312: polySurface80
+    400314: polySurface81
+    400316: polySurface82
+    400318: polySurface83
+    400320: polySurface84
+    400322: polySurface85
+    400324: polySurface86
+    400326: polySurface87
+    400328: polySurface88
+    400330: transform66
     2300000: pCube27
     2300002: pCube28
     2300004: pCube29
@@ -326,6 +352,18 @@ ModelImporter:
     2300024: polySurface73
     2300026: polySurface74
     2300028: polySurface76
+    2300030: polySurface77
+    2300032: polySurface78
+    2300034: polySurface79
+    2300036: polySurface80
+    2300038: polySurface81
+    2300040: polySurface82
+    2300042: polySurface83
+    2300044: polySurface84
+    2300046: polySurface85
+    2300048: polySurface86
+    2300050: polySurface87
+    2300052: polySurface88
     3300000: pCube27
     3300002: pCube28
     3300004: pCube29
@@ -341,6 +379,18 @@ ModelImporter:
     3300024: polySurface73
     3300026: polySurface74
     3300028: polySurface76
+    3300030: polySurface77
+    3300032: polySurface78
+    3300034: polySurface79
+    3300036: polySurface80
+    3300038: polySurface81
+    3300040: polySurface82
+    3300042: polySurface83
+    3300044: polySurface84
+    3300046: polySurface85
+    3300048: polySurface86
+    3300050: polySurface87
+    3300052: polySurface88
     4300000: polySurface76
     4300002: pCube27
     4300004: pCube28
@@ -356,6 +406,18 @@ ModelImporter:
     4300024: polySurface73
     4300026: pCube31
     4300028: polySurface74
+    4300030: polySurface77
+    4300032: polySurface78
+    4300034: polySurface79
+    4300036: polySurface80
+    4300038: polySurface81
+    4300040: polySurface82
+    4300042: polySurface83
+    4300044: polySurface84
+    4300046: polySurface85
+    4300048: polySurface86
+    4300050: polySurface87
+    4300052: polySurface88
     7400000: Take 001
     9500000: //RootNode
   materials:
