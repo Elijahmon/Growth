@@ -1,15 +1,39 @@
 fileFormatVersion: 2
-guid: bbe4aa3e8e7fe45baa8f37f3b50abbc4
-timeCreated: 1450022032
+guid: e5361442eff42194485473098a6e4324
+timeCreated: 1449988411
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
     100000: //RootNode
+    100002: ChaiseLoungeFrame
+    100004: ChaiseLoungeMatress
+    100006: CylinderPillow
+    100008: SquarePillow
+    100010: SquarePillow001
     400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: pictureFrame
+    400002: ChaiseLoungeFrame
+    400004: ChaiseLoungeMatress
+    400006: CylinderPillow
+    400008: SquarePillow
+    400010: SquarePillow001
+    2300000: ChaiseLoungeFrame
+    2300002: ChaiseLoungeMatress
+    2300004: CylinderPillow
+    2300006: SquarePillow
+    2300008: SquarePillow001
+    3300000: ChaiseLoungeFrame
+    3300002: ChaiseLoungeMatress
+    3300004: CylinderPillow
+    3300006: SquarePillow
+    3300008: SquarePillow001
+    4300000: ChaiseLoungeFrame
+    4300002: ChaiseLoungeMatress
+    4300004: SquarePillow
+    4300006: SquarePillow001
+    4300008: CylinderPillow
+    7400000: Take 001
+    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -68,7 +92,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

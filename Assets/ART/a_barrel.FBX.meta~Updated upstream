@@ -1,70 +1,15 @@
 fileFormatVersion: 2
-guid: a1d9ebcb91e364841be2b9ddd8fa18e2
-timeCreated: 1449988448
+guid: 35bb8250035601d49818eadd2cb16286
+timeCreated: 1449988409
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
     100000: //RootNode
-    100002: pCube13
-    100004: pCube14
-    100006: pCube15
-    100008: pCube16
-    100010: pCube17
-    100012: pCube18
-    100014: pCube20
-    100016: pCube21
-    100018: pCube22
-    100020: pCube23
-    100022: pCube24
-    100024: pCube25
-    100026: pCube26
-    100028: polySurface1
-    100030: transform13
-    100032: transform14
-    100034: transform15
-    100036: transform16
-    100038: transform17
-    100040: transform18
-    100042: transform19
-    100044: transform20
-    100046: transform21
-    100048: transform22
-    100050: transform23
-    100052: transform24
-    100054: transform25
     400000: //RootNode
-    400002: pCube13
-    400004: pCube14
-    400006: pCube15
-    400008: pCube16
-    400010: pCube17
-    400012: pCube18
-    400014: pCube20
-    400016: pCube21
-    400018: pCube22
-    400020: pCube23
-    400022: pCube24
-    400024: pCube25
-    400026: pCube26
-    400028: polySurface1
-    400030: transform13
-    400032: transform14
-    400034: transform15
-    400036: transform16
-    400038: transform17
-    400040: transform18
-    400042: transform19
-    400044: transform20
-    400046: transform21
-    400048: transform22
-    400050: transform23
-    400052: transform24
-    400054: transform25
-    2300000: polySurface1
-    3300000: polySurface1
-    4300000: polySurface1
-    9500000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: BarrelOpen
   materials:
     importMaterials: 1
     materialName: 0
@@ -123,7 +68,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
